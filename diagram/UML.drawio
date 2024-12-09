@@ -1,0 +1,16 @@
+<mxfile host="65bd71144e">
+    <diagram id="TEUmv1uJJAU4et0RVGIC" name="Page-1">
+        <mxGraphModel dx="740" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" background="#ffffff" math="0" shadow="1">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="26" value="list_item" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=0;fontSize=15;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;labelBackgroundColor=default;swimlaneFillColor=none;gradientColor=none;strokeColor=#000000;swimlaneLine=1;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="160" width="320" height="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="- db : mysqli&#10;- name : string&#10;- description : string&#10;- priority : tinyint&#10;-----------------------------------------------------------------------&#10;+ __construct()&#10;+ setName(name: string) : bool&#10;+ getName() : string&#10;+ setDescription(description : string) : bool&#10;+ getDescription() : string&#10;+ setPriority(priority : int) : bool&#10;+ getPriority() : int&#10;+ addListitem(name, description, priority) : bool&#10;+ getAllListitems() : array&#10;+ getErrorMessage() : string&#10;+ __desctruct()" style="align=left;strokeColor=none;fillColor=#FFFFFF;spacingLeft=4;fontSize=13;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#000000;fontStyle=1;" parent="26" vertex="1">
+                    <mxGeometry y="30" width="320" height="310" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

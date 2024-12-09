@@ -1,0 +1,188 @@
+/* Body. */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #fafafa;
+}
+
+/* Gemensamt för header och footer. */
+.header, .footer {
+    width: 100%;
+    text-align: center;
+    background-color: #253539;
+    color: #ffffff;
+    padding: 1rem;
+    margin: 0;
+}
+
+/* Header. */
+.header {
+    height: 200px;
+}
+
+/* Footer. */
+.footer {
+    height: 50px;
+    margin-top: auto;
+}
+
+/* Navigation. */
+.nav {
+    text-align: center;
+    color: #ffffff;
+    margin: 0 0 3rem 0;
+    padding: 0 0 1rem 0;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.nav ul li {
+    display: inline;  
+    margin: 0.5rem; 
+}
+
+/* Länkar. */
+.nav a {
+    list-style-type: none;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main-innehållet. */
+main {
+    text-align: center;
+    margin: 3rem 1rem;
+}
+
+section {
+    margin: 0 0 3rem 0;
+}
+
+/* Paragraftexter. */
+#task, 
+#reflections {
+    max-width: 60ch;
+    margin: 0 auto;
+    border: 1px solid #81736E;
+    padding: 2rem;
+}
+
+/* Tabellen. */
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #81736E;
+    margin: 2rem 0;
+}
+
+/* Tabellstruktur- och utseende. */
+th:first-child,
+td:first-child {
+    padding-left: 1.5rem;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 1rem;
+}
+
+tr:nth-child(even) {
+    background-color: #e3e3e3;
+}
+
+/* Formulär. */
+.form-container {
+    text-align: left;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+input[type='text'], 
+select {
+    border: 1px solid #81736E;
+}
+
+/* Knappar. */
+#add-button, 
+#edit-button,
+#cancel-button,
+.deleteitem-button, 
+.edititem-button {
+    background-color: #81736E;
+    color: #ffffff;
+    margin: 0.5rem 0;
+    border: none;
+}
+
+#add-button, 
+#edit-button,
+#cancel-button {
+    width: 150px;
+}
+
+.deleteitem-button, 
+.edititem-button {
+    width: 100px;
+    color: white;
+}
+
+#add-button:hover,
+#edit-button:hover,
+.deleteitem-button:hover,
+.edititem-button:hover {
+    background-color: #999DA0;
+    color: #000000;
+}
+
+/* Meddelanden för bekräftelse/fel. */
+#error {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+#confirmation {
+    font-weight: bold;
+    color: #008000;
+}
+
+/* Mediaquery för större skärmar. */
+@media (min-width: 348px) {
+    .header {
+        height: 150px;
+    }
+}
+
+/* Mediaquery för större skärmar. */
+@media (min-width: 360px) {
+    /* Ökar margin runt nav-länkar något. */
+    .nav ul li {
+        margin: 1rem;  
+    }
+}
+
+@media (min-width: 646px) {
+    /* Minskar tabellens bredd. */
+    table {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1441px) {
+    /* Minskar tabellens bredd. */
+    table {
+        width: 50%;
+    }
+}
